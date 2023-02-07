@@ -1,6 +1,6 @@
 {
   "name": "draft-js-extended-video-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Draft js extended video plugin",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

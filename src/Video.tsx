@@ -27,14 +27,18 @@ export interface VideoProps extends React.ComponentPropsWithRef<'video'> {
 export default React.forwardRef<HTMLVideoElement, VideoProps>(
     function Video(props, ref): ReactElement {
         const {
-            contentState,
             blockStyleFn,
+            block,
+            contentState,
             customStyleMap,
             customStyleFn,
+            decorator,
             forceSelection,
             offsetKey,
+            selection,
+            tree,
             preventScroll,
-            block, className, theme = {}, blockProps, ...elementProps
+            className, theme = {}, blockProps, ...elementProps
         } = props;
         const combinedClassName = clsx(styles.videoAttachment, theme.video, className);
         const {data} = blockProps;
