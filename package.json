@@ -1,0 +1,54 @@
+{
+  "name": "draft-js-extended-video-plugin",
+  "version": "1.0.0",
+  "description": "Draft js extended video plugin",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AstakhovV/draft-js-extended-video-plugin.git"
+  },
+  "author": "Vlad Astakhov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AstakhovV/draft-js-extended-video-plugin/issues"
+  },
+  "homepage": "https://github.com/AstakhovV/draft-js-extended-video-plugin#readme",
+  "dependencies": {
+    "@draft-js-plugins/editor": "^4.1.3",
+    "clsx": "^1.2.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-terser": "^0.2.0",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/draft-js": "^0.11.10",
+    "@types/react": "^17.0.34",
+    "css-loader": "^6.7.3",
+    "rollup": "^2.60.0",
+    "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.4.4"
+  },
+  "peerDependencies": {
+    "draft-js": "^0.10.1 || ^0.11.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
